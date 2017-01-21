@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>FullMix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>FullMix UserScript JS</h1>
+        <section>
+            <h3>Mettre le lien en Favoris : </h3>
+            <a href="javascript:(function(){var%20el=document.createElement('script');el.src='https://roi-du-macadam.github.io/fullmix/fullMix.js';document.body.appendChild(el);})();">     
+				FullMix
+            </a>
+        </section>
+        
+        <section class="form-group">
+            <h3>Copier le script :</h3>
+            <!-- Target -->
+            <textarea id="code" class="form-control" rows="3">javascript:(function(){var%20el=document.createElement('script');el.src='https://roi-du-macadam.github.io/fullmix/fullMix.js';document.body.appendChild(el);})();</textarea>
+
+            <!-- Trigger -->
+            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#code">
+                Copier
+            </button>
+        </section>
+    </div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+	<script>new Clipboard('.btn');</script>
+</body>
+</html>
